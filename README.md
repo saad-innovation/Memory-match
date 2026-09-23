@@ -1,2 +1,1 @@
-# Memory-match
-Playable Memory Card Game featuring heavy CSS animations, JavaScript state management, and persistent local storage.
+Memory Match is a fully responsive and interactive web-based card matching game. Developed using HTML5, advanced CSS3 animations (including 3D card flips and neon effects), and Vanilla JavaScript. The game features real-time move tracking, a built-in timer, and utilizes browser Local Storage to save high scores. Perfect for anyone looking for an engaging JS browser game or a frontend development project.
