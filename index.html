@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Memory Match</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="confetti"></canvas>
+
+    <header>
+        <h1>Neon Match</h1>
+        <div class="hud">
+            <div class="stat">
+                <span class="stat-label">Moves</span>
+                <span class="stat-value" id="moves-count">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Best</span>
+                <span class="stat-value" id="best-score">--</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-board" id="board">
+        <!-- Cards injected via JavaScript -->
+    </div>
+
+    <div class="controls">
+        <button class="btn" id="restart-btn">Restart Game</button>
+    </div>
+
+    <div class="modal-overlay" id="victory-modal">
+        <div class="modal-box">
+            <h2>System Clear!</h2>
+            <p>Completed in <span class="highlight" id="final-moves">0</span> moves.</p>
+            <div class="record-banner" id="record-banner">🏆 NEW HIGH SCORE! 🏆</div>
+            <button class="btn" id="play-again-btn" style="border-color: var(--neon-pink); color: var(--neon-pink);">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
